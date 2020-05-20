@@ -515,8 +515,6 @@ img {
 	left: 50%;
 	transform: translateX(-50%);
 	display: flex;
-	flex-wrap: wrap;
-	margin-right: -24px;
 }
 
 .videochat .widget .videochat__control a {
@@ -560,8 +558,8 @@ img {
 }
 
 .videochat .videochat__modal.mini {
-	width: 320px;
-	height: 160px;
+	width: 285px;
+	height: 125px;
 	right: 0;
 	bottom: 0;
 	position: absolute;
@@ -569,8 +567,8 @@ img {
 	margin: 0;
 	box-sizing: content-box;
 	box-shadow: none;
-	min-width: 300px;
-	min-height: 140px;
+	min-width: 285px;
+	min-height: 120px;
 }
 
 .videochat .videochat__modal.mini .videochat__head {
@@ -797,4 +795,7 @@ img {
 		font-weight: 500;
 	}
 
+	.videochat .videochat__modal.mini .videochat__control {
+		flex-wrap: wrap;
+	}
 }
