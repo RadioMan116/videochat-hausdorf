@@ -312,6 +312,8 @@ img {
 
 .videochat .videochat__manager .videochat__row {
 	align-items: flex-start;
+	padding: 0 0 16px;
+	margin-bottom: 24px;
 }
 
 .videochat .videochat__back {
@@ -343,6 +345,7 @@ img {
 	font-size: 14px;
 	font-weight: 400;
 	line-height: 19px;
+	border-bottom: 1px solid rgba(221, 0, 22, 0.1);
 }
 
 .videochat .videochat__number {
@@ -513,6 +516,7 @@ img {
 	left: 50%;
 	transform: translateX(-50%);
 	display: flex;
+	justify-content: center;
 }
 
 .videochat .widget .videochat__control a {
@@ -546,7 +550,15 @@ img {
 }
 
 .videochat .widget .videochat__control .videochat__toggle {
-	background-image: url('../img/change-camera.svg');
+	background-image: url('../img/button.svg');
+}
+
+.videochat .widget .videochat__control .videochat__micro.not {
+	background-image: url('../img/stop-mic.svg');
+}
+
+.videochat .widget .videochat__control .videochat__toggle.not {
+	background-image: url('../img/stop-camera.svg');
 }
 
 .videochat .widget .videochat__control .videochat__disconnect {
@@ -752,6 +764,16 @@ img {
 	.videochat .videochat__modal.widget {
 		min-width: unset;
 		min-height: unset;
+
+	}
+
+	.videochat .videochat__information {
+		width: calc(100% - 70px);
+	}
+
+	.videochat .videochat__modal.mini {
+		width: 160px;
+		height: 88px;
 	}
 
 	.videochat .widget .videochat__head .videochat__fullscreen {
@@ -798,9 +820,86 @@ img {
 		margin-bottom: 16px;
 		font-size: 12px;
 		font-weight: 500;
+		flex-direction: column;
+		align-items: baseline;
+	}
+
+	.popup-videochat__header .rating-stars {
+		margin-left: 0;
 	}
 
 	.videochat .videochat__modal.mini .videochat__control {
 		flex-wrap: wrap;
+		display: none !important;
+	}
+
+	.videochat .videochat__head-subtitle {
+		display: none;
+	}
+
+	.videochat .videochat__text .name {
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 24px;
+	}
+
+	.videochat .videochat__text .status {
+		font-size: 12px;
+		font-weight: 400;
+		line-height: 24px;
+	}
+
+	.videochat .videochat__rating {
+		margin-left: 0;
+	}
+
+	.videochat .videochat__info {
+		margin-left: 6px;
+	}
+
+	.videochat .videochat__manager .videochat__row {
+		flex-wrap: wrap;
+		padding: 0 0 16px;
+		margin-bottom: 16px;
+	}
+
+	.videochat .videochat__back {
+		width: 100%;
+		margin-bottom: 16px;
+	}
+
+	.videochat .videochat__manager .videochat__img {
+		max-width: 56px;
+		margin-right: 14px;
+	}
+
+	.videochat .videochat__information-row {
+		flex-wrap: wrap;
+	}
+
+	.videochat .videochat__manager .videochat__text .status {
+		width: 100%;
+	}
+
+	.videochat .videochat__additional {
+		width: 100%;
+	}
+
+	.videochat .videochat__mail {
+		border-bottom: 1px solid rgba(221, 0, 22, 0.1);
+	}
+
+	.videochat .videochat__modal {
+		right: 0;
+	}
+
+	.videochat .videochat__camera {
+		margin-left: 6px;
+	}
+
+	.videochat .videochat__about p {
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 20px;
 	}
 }
