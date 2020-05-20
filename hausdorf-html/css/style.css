@@ -74,8 +74,6 @@ img {
 	right: 8px;
 	bottom: 8px;
 	width: 500px;
-	max-width: calc(100% - 0.01px);
-	max-height: calc(100% - 0.01px);
 	overflow-y: auto;
 	background: #fff;
 	border-radius: 6px;
@@ -747,6 +745,13 @@ img {
 
 	.videochat .videochat__modal {
 		padding: 16px;
+		min-width: unset;
+		min-height: unset;
+	}
+
+	.videochat .videochat__modal.widget {
+		min-width: unset;
+		min-height: unset;
 	}
 
 	.videochat .widget .videochat__head .videochat__fullscreen {
