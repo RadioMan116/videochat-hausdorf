@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+
+  <g id="arrows" transform="matrix(-1 0 0 1 32 0)">
+    <g id="Group">
+      <path d="M16 32C24.8366 32 32 24.8366 32 16C32 7.16344 24.8366 0 16 0C7.16344 0 0 7.16344 0 16C0 24.8366 7.16344 32 16 32Z" id="Oval" fill="#FFFFFF" stroke="#D7D7D7" stroke-width="1" />
+      <path d="M0 0L5.33333 6.66667L0 13.3333" transform="translate(14.66667 9.333333)" id="arrow" fill="none" stroke="#DD0016" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+    </g>
+  </g>
+</svg>

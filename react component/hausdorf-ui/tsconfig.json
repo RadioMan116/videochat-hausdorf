@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "target": "es2018",
+    "lib": ["esnext", "dom"],
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "strictFunctionTypes": false,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "removeComments": false,
+    "declaration": true,
+    "sourceMap": true,
+    "outDir": "dist",
+    "jsx": "react",
+    "rootDirs": ["./src", "./stories"]
+  },
+  "include": ["./src"],
+  "exclude": ["node_modules", "build", "scripts"]
+}

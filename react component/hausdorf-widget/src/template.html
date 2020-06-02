@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title><%= htmlWebpackPlugin.options.title %></title>
+    <script
+      crossorigin
+      src="https://unpkg.com/react@16/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://unpkg.com/normalize.css@8.0.1/normalize.css"
+    />
+    <script src="env.js" type="text/javascript"></script>
+
+    <%= htmlWebpackPlugin.tags.headTags %>
+  </head>
+  <body>
+    <div id="videoforce-widget"></div>
+    <%= htmlWebpackPlugin.tags.bodyTags %>
+    <script type="text/javascript">
+      VideoforceWidget.init('videoforce-widget', {
+        site: 'whitewater-dev.com',
+        apiUrl: window._env_.REACT_APP_VIDEOAPI,
+        region: 'eu-central-1',
+        identityPoolId: window._env_.REACT_APP_COGNITO_IDENTITY_POOL_ID,
+        identityPoolRegion: 'eu-central-1',
+        userPoolId: window._env_.REACT_APP_COGNITO_USER_POOL_ID,
+        userPoolWebClientId: window._env_.REACT_APP_COGNITO_WEB_CLIENT_ID,
+      });
+    </script>
+  </body>
+</html>
