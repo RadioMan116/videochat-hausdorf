@@ -1,4 +1,4 @@
-/* @charset "UTF-8";
+@charset "UTF-8";
 
 html,
 body {
@@ -1075,8 +1075,9 @@ a.videochat__disconnect {
 	.videochat .videochat__rating .number {
 		margin-left: 8px
 	}
-} */
-@charset "UTF-8";
+}
+
+/* @charset "UTF-8";
 
 html,
 body {
@@ -1110,9 +1111,7 @@ body {
 	box-sizing: border-box;
 }
 
-/* svg {
-	display: none;
-} */
+
 img {
 	max-width: 100%;
 	max-height: 100%;
@@ -1151,7 +1150,6 @@ video {
 .videochat__modal {
 	position: absolute;
 	box-sizing: border-box;
-	/* margin: auto; */
 	right: 8px;
 	bottom: 8px;
 	width: 500px;
@@ -1195,7 +1193,6 @@ video {
 
 .videochat__modal:not(.widget) .videochat__body::-webkit-scrollbar {
 	width: 4px;
-	/* background-color: #F5F5F5; */
 }
 
 .videochat__modal:not(.widget) .videochat__body::-webkit-scrollbar-track {
@@ -1224,7 +1221,7 @@ video {
 	-webkit-box-direction: normal;
 	-ms-flex-direction: column;
 	flex-direction: column;
-	/* position: relative; */
+
 	margin-bottom: 18px;
 	cursor: -webkit-grab;
 	cursor: grab;
@@ -1258,8 +1255,6 @@ video {
 	-webkit-box-direction: normal;
 	-ms-flex-direction: column;
 	flex-direction: column;
-	/* max-height: 374px;
-	overflow-y: auto; */
 }
 
 .videochat__row {
@@ -1412,12 +1407,7 @@ video {
 	cursor: pointer;
 }
 
-/* .videochat__camera:before {
-	content: '';
-	width: 32px;
-	height: 32px;
-	background-image: url('../img/iconvideo.svg');
-} */
+
 
 
 .videochat__camera:hover svg {
@@ -1645,9 +1635,9 @@ video {
 	width: 719px;
 	border-radius: 20px;
 	background: #ffffff;
-	/* box-shadow: 0px 2px 46px rgba(0, 0, 0, 0.1); */
+
 	box-shadow: none;
-	/* padding: 0; */
+
 	right: unset;
 	bottom: unset;
 	margin: auto;
@@ -1786,17 +1776,9 @@ video {
 	margin-right: 0;
 }
 
-/* .videochat__control a:before {
-	content: '';
-	width: 100%;
-	height: 100%;
-} */
-
-.videochat__change {
-	/* background-image: url('../img/change-camera.svg'); */
 
 
-}
+.videochat__change {}
 
 .videochat__micro {
 	background-image: url('../img/micro.svg');
@@ -2235,4 +2217,4 @@ a.videochat__disconnect {
 		height: 40px;
 		max-height: 40px;
 	}
-}
+} */
