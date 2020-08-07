@@ -1,0 +1,55 @@
+{
+  "name": "@videoforce/widget-hausdorf",
+  "version": "1.17.2",
+  "main": "dist/index.js",
+  "private": true,
+  "scripts": {
+    "build": "webpack --config webpack.prod.js",
+    "start": "webpack-dev-server --config webpack.dev.js --open",
+    "storybook": "start-storybook -s ./public -p 6006",
+    "version": "yarn build"
+  },
+  "dependencies": {
+    "@aws-amplify/auth": "^3.2.7",
+    "@videoforce/commons": "^1.11.0",
+    "@videoforce/react": "^1.17.1",
+    "@videoforce/use-openvidu": "^1.17.2",
+    "clsx": "^1.1.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-transition-group": "^4.4.1",
+    "tslib": "^2.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.9.6",
+    "@storybook/addon-actions": "^5.3.18",
+    "@storybook/addon-knobs": "^5.3.18",
+    "@storybook/addon-links": "^5.3.18",
+    "@storybook/addons": "^5.3.18",
+    "@storybook/react": "^5.3.18",
+    "@testing-library/jest-dom": "^5.9.0",
+    "@testing-library/react": "^10.2.1",
+    "@testing-library/user-event": "^11.2.1",
+    "@types/node": "14.0.6",
+    "@types/react-transition-group": "^4.2.4",
+    "@videoforce/webpack-widgets": "^1.15.4",
+    "babel-loader": "^8.1.0",
+    "concurrently": "^5.2.0",
+    "typescript": "^3.9.3",
+    "webpack": "4.43.0",
+    "webpack-bundle-analyzer": "^3.8.0",
+    "webpack-cli": "^3.3.11"
+  },
+  "browserslist": {
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ],
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ]
+  }
+}
